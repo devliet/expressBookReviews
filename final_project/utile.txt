@@ -1,0 +1,9 @@
+curl localhost:5000/register -H "Content-Type: application/json" -X POST -d "{\"username\": \"devliet\", \"password\": \"abc\"}" &
+
+curl localhost:5000/customer/login -H "Content-Type: application/json" -X POST -d "{\"username\": \"devliet\", \"password\": \"abc\"}" &
+
+curl localhost:5000/customer/auth/review/9 -H "Content-Type: application/json" -X PUT -d "{\"review\": \"Comment on the Trump show\"}" &
+
+curl -X DELETE localhost:5000/customer/auth/review/9 &
+
+curl localhost:5000/
